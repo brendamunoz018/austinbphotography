@@ -245,7 +245,6 @@ nav {
 	overflow: hidden;
 	flex: 0 0 auto;
 	height: 5em;
-	background: cornflowerblue;
 	font-size: 3rem;
 	text-align: center;
 	align-content: center;
@@ -447,4 +446,5 @@ nav {
 		flex-direction: column;
 	}
 }
+
 
