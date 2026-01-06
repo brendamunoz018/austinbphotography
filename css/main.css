@@ -3,7 +3,7 @@
 @charset "utf-8";
 @font-face {
 	font-family: onely sans;
-	src: url(OnelySans.otf);
+	src: url("../assets/OnelySans.otf");
 }
 
 :root {
@@ -447,3 +447,4 @@ nav {
 		flex-direction: column;
 	}
 }
+
