@@ -201,7 +201,6 @@ nav {
 	padding: 3rem;
 	display: flex;
 	flex-direction: column;
-	flex-wrap: wrap;
 }
 
 .column * {
@@ -404,6 +403,10 @@ nav {
 	.column * {
   		max-width: 100%;
 	}
+	
+	.column p {
+    text-align: left;
+  	}
 
     .footer {
 	    display:grid;
