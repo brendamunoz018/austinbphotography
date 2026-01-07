@@ -24,6 +24,23 @@
 body {
 	top:0;
 	background-color: var(--base-color);
+	position: relative;
+  	background: black;
+}
+
+body::before {
+  	content: "";
+  	position: fixed;
+  	inset: 0;
+
+  	background: url("../images/bg.png") center / cover no-repeat;
+
+  	z-index: -1;
+
+  /* iOS rendering stability */
+  	transform: translateZ(0);
+  	will-change: transform;
+	image-rendering: auto;
 }
 
 h1, h2, h3 {
@@ -372,11 +389,7 @@ iframe {
 		"foot";
 		gap:0;
 		justify-items: center;
-		background-image: url(../images/bg.png);
-		background-repeat: no-repeat; /* Prevents the image from tiling */
-  		background-size: cover; /* Ensures the image covers the entire background */
-  		background-position: center; /* Centers the image */
-  		background-attachment: fixed;
+		background: none;
 	}
 
     nav {
