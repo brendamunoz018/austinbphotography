@@ -395,6 +395,16 @@ nav {
 		justify-content: center;
 	}
 
+	.column {
+  		min-width: 0;
+  		max-width: 100%;
+ 		overflow-wrap: break-word;
+	}
+
+	.column * {
+  		max-width: 100%;
+	}
+
     .footer {
 	    display:grid;
 		grid-area: foot;
