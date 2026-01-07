@@ -330,6 +330,7 @@ details > div {
     }
 	
 	.brand {
+		width:80%;
 		font-size: 1.3rem;
 	}
 
@@ -370,7 +371,7 @@ details > div {
 
 	.portfolio {
 		width: 100%;
-		padding: 3rem;
+		padding: 2rem;
 	}
 
 	.gallery {
@@ -381,9 +382,8 @@ details > div {
 
     .footer {
 	    display:grid;
-	    grid-template-columns: 1fr 1fr 1fr;
+	    grid-template-columns: 1.5fr 1fr 1fr;
 	    gap:20px;
 	    padding: 2rem;
 }
 }
-
