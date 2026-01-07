@@ -160,17 +160,12 @@ nav {
 /* about */
 .about {
 	grid-area: "about";
-	width:100%;
+	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-	gap:50px;
-}
-
-.about img {
-	max-width:200px;
-	object-fit:cover;
+	gap: 50px;
 }
 
 .about-text {
@@ -180,6 +175,11 @@ nav {
 
 .about-text h2 {
 	font-size: 2rem;
+}
+
+iframe {
+	width:460px;
+	height:280px;
 }
 
 .separator {
@@ -218,9 +218,10 @@ nav {
 
 .carousel {
 	margin: 0 auto;
-	width: 80%;
+	width: 100%;
 	display: flex;
-	overflow-x: auto;
+	overflow: hidden;
+	position: relative;
 }
 
 .carousel::-webkit-scrollbar {
@@ -232,21 +233,21 @@ nav {
 	align-items: center;
 	justify-content: center;
 	gap: 1em;
-	animation: spin 60s infinite linear;
+	animation: scroll 40s linear infinite;
 	padding-right: 1em;
 }
 
 .card img {
 	height: 100%;
 	object-fit: cover;
+	display: block;
 }
+
 
 .card {
 	overflow: hidden;
 	flex: 0 0 auto;
-	height: 5em;
-	font-size: 3rem;
-	text-align: center;
+	height: 300px;
 	align-content: center;
 }
 
@@ -266,9 +267,13 @@ nav {
 	letter-spacing: 0.5px;
 }
 
-@keyframes spin {
-	from {translate: 0;}
-	to {translate: -100%}
+@keyframes scroll {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(-50%);
+	}
 }
 
 /* footer */
@@ -380,6 +385,7 @@ nav {
     }
 	
 	.brand {
+		width:80%;
 		font-size: 1.3rem;
 	}
 
@@ -419,7 +425,7 @@ nav {
 	}
 
 	.about {
-		padding:3em 0;
+		padding:2em;
 		gap: 2em;
 	}
 
@@ -427,11 +433,19 @@ nav {
 		width:80%;
 	}
 
+	iframe {
+		width:100%;
+		height:40%;
+	}
+
 	.featured-works {
 		width:100%;
-		margin:2rem;
 		overflow: hidden;
 		flex-direction: column;
+	}
+
+	.featured h2 {
+		padding:2rem;
 	}
 
 	.carousel {
@@ -440,11 +454,9 @@ nav {
 
 	.footer {
 		display:grid;
-		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-columns: 1.5fr 1fr 1fr;
 		gap:20px;
-		padding: 3em;
+		padding: 2em;
 		flex-direction: column;
 	}
 }
-
-
