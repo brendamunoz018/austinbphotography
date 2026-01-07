@@ -355,17 +355,20 @@ nav {
 	    margin-top:40%;
 	}
 
-	.cont {
-		width:100%;
-		padding: 3rem;
-	}
-
 	.contact{
+		width:100%;
+		padding: 2rem;
 		flex-direction: column;
+		gap: 2rem;
 	}
 
 	.contact-textbox{
 		width: 100%;
+		padding:0;
+	}
+	
+	.text {
+		width:100%;
 	}
 
 	.contact-picture {
@@ -374,9 +377,8 @@ nav {
 
     .footer {
 	    display:grid;
-	    grid-template-columns: 1fr 1fr 1fr;
+	    grid-template-columns: 1.5fr 1fr 1fr;
 	    gap:20px;
 	    padding: 2rem;
 }
 }
-
