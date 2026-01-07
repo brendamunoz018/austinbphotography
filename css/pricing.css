@@ -57,6 +57,7 @@ p {
 	background-repeat: no-repeat; /* Prevents the image from tiling */
   	background-size: cover; /* Ensures the image covers the entire background */
   	background-position: center; /* Centers the image */
+	background-attachment: fixed;
 }
 
 
@@ -393,3 +394,4 @@ nav {
 	    padding: 2rem;
 	}
 }
+
