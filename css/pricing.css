@@ -190,6 +190,9 @@ nav {
 }
 
 .column {
+	min-width: 0;
+	max-width: 100%;
+	overflow-wrap: break-word;
 	flex-grow: 1;
 	flex-shrink: 1;
 	flex-basis: 300px;
@@ -199,6 +202,10 @@ nav {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
+}
+
+.column * {
+	max-width: 100%;
 }
 
 .column li {
